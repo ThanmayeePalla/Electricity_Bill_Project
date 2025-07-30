@@ -1,24 +1,11 @@
--- phpMyAdmin SQL Dump
--- version 5.1.1
--- https://www.phpmyadmin.net/
---
--- Host: 127.0.0.1
--- Generation Time: Dec 11, 2022 at 02:12 AM
--- Server version: 10.4.22-MariaDB
--- PHP Version: 8.1.1
+
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
 
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
-
 --
--- Database: `project2`
+-- Database: `project`
 --
 
 -- --------------------------------------------------------
@@ -63,7 +50,7 @@ CREATE TABLE `customer` (
 --
 
 INSERT INTO `customer` (`name`, `meter`, `address`, `state`, `city`, `email`, `phone`) VALUES
-('Angel Jude Suarez', '446227', 'Brgy. To-oy', 'Himamaylan City', 'Philippines', 'suarez081119@gmail.com', '+639272777334');
+('Thanmayee', '446227', 'Flat no 305', 'Andhra Pradesh', 'Vizianagaram', 'thanmayee@gmail.com', '+915678934256');
 
 -- --------------------------------------------------------
 
@@ -84,7 +71,7 @@ CREATE TABLE `login` (
 --
 
 INSERT INTO `login` (`meter_no`, `name`, `username`, `password`, `user`) VALUES
-('1', 'Angel Jude Suarez', 'admin', 'admin', 'Admin'),
+('1', 'Thanmayee', 'admin', 'admin', 'Admin'),
 ('446227', '', '', '', ''),
 ('45555', '', '', '', '');
 
@@ -134,6 +121,4 @@ INSERT INTO `tax` (`cost_per_unit`, `meter_rent`, `service_charge`, `service_tax
 ('9', '47', '22', '57', '6', '18');
 COMMIT;
 
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
